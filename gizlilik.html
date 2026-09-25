@@ -44,7 +44,7 @@ footer{border-top:1px solid var(--rule);padding-top:16px;color:var(--dim);font-s
 <header>
   <div class="brand"><i></i>FITNEX</div>
   <h1>Gizlilik Politikası</h1>
-  <div class="meta">Son güncelleme: 25 Eylül 2026 · Geliştirici: EA Vision Labs · Paket: com.eavisionlabs.fitnex</div>
+  <div class="meta">Son güncelleme: 26 Eylül 2026 · Geliştirici: EA Vision Labs · Paket: com.eavisionlabs.fitnex</div>
 </header>
 
 <p class="lede">FITNEX, antrenman ve beslenme takibi yapan kişisel bir fitness uygulamasıdır. Bu politika, uygulamanın hangi verileri kullandığını, nerede sakladığını ve bu veriler üzerinde hangi haklara sahip olduğunu açıklar. Kısaca: <strong>verilerin telefonunda ve yalnızca senin erişebildiğin, hesabına bağlı bir bulut yedeğinde saklanır</strong>. Bu yedek, telefon değiştirdiğinde veya uygulamayı yeniden yüklediğinde verilerini geri getirmek içindir. Hiçbir veriyi satmayız ve reklam için kullanmayız.</p>
@@ -60,12 +60,16 @@ footer{border-top:1px solid var(--rule);padding-top:16px;color:var(--dim);font-s
       <tr><td>Antrenman kayıtları, beslenme ve su takibi, ilerleme ölçümleri, ayarlar</td><td>Takip, grafik ve öneriler</td><td class="where">Telefonunda ve bulut yedeğinde</td></tr>
       <tr><td>Akıllı Koç sohbetleri</td><td>Koç yanıtları telefonun üzerinde üretilir; mesajların bir yapay zekâ sunucusuna gönderilmez. Sohbet geçmişin yalnızca yedeklenmek üzere bulut yedeğine dahil edilir</td><td class="where">Telefonunda ve bulut yedeğinde</td></tr>
       <tr><td>Okuttuğun ürün barkodu (yalnızca barkod okuttuğunda)</td><td>Ürünün kalori ve besin değerlerini bulmak. Yalnızca barkod numarası gönderilir; adın, e-postan veya başka bir bilgin gönderilmez</td><td class="where">Open Food Facts</td></tr>
+      <tr><td>Adım sayısı ve kilo (yalnızca Health Connect'e bağlanırsan)</td><td>Yakılan kaloriyi hesaplamak ve kilo grafiğine eklemek. Veriler yalnızca okunur, Health Connect'e hiçbir şey yazılmaz; reklam için kullanılmaz ve paylaşılmaz</td><td class="where">Telefonunda ve bulut yedeğinde</td></tr>
+      <tr><td>Anonim kullanım istatistikleri</td><td>Hangi özelliklerin kullanıldığını anlayıp uygulamayı geliştirmek (ör. "antrenman tamamlandı", "yemek eklendi" gibi olaylar). Ad, e-posta veya fitness değerlerin içermez. <span class="path">Profil › Gizlilik</span> bölümünden kapatabilirsin</td><td class="where">Google Firebase Analytics</td></tr>
+      <tr><td>Davet kodu</td><td>Arkadaş davetinde hediye günlerini hesaplamak. Yalnızca anonim hesap kimliği ve kod saklanır</td><td class="where">Bulut veritabanı</td></tr>
+      <tr><td>Paylaştığın ürün bilgisi (barkodlu ürünün besin değerlerini girersen)</td><td>Aynı ürünü okutan diğer kullanıcılara hazır gelmesi. Yalnızca ürün adı, barkod ve besin değerleri paylaşılır; senin kimliğin diğer kullanıcılara gösterilmez</td><td class="where">Ortak ürün veritabanı</td></tr>
       <tr><td>Uygulama çökme ve hata raporları</td><td>Uygulamadaki hataları bulup düzeltmek. Cihaz modeli, Android sürümü, uygulama sürümü, hatanın teknik ayrıntısı ve anonim üye kimliği içerir; ad, e-posta veya fitness verilerin içermez</td><td class="where">Google Firebase Crashlytics</td></tr>
       <tr><td>Abonelik ve satın alma bilgisi</td><td>Aboneliğini doğrulamak ve özellikleri açmak</td><td class="where">Google Play ve RevenueCat</td></tr>
     </tbody>
   </table></div>
-  <p><strong>Bulut yedeği nasıl korunur?</strong> Yedek, Google Firebase'in Cloud Firestore hizmetinde, Amerika Birleşik Devletleri'ndeki Google sunucularında saklanır. Bulut yedeğini kullanarak verilerinin bu amaçla yurt dışındaki sunuculara aktarılmasına onay vermiş olursun. Veriler aktarım sırasında (HTTPS/TLS) ve depolanırken şifrelidir. Güvenlik kuralları gereği her kullanıcı yalnızca kendi hesabına ait yedeğe erişebilir; başka kullanıcılar senin verini göremez. Yedek yalnızca verilerini sana geri getirmek için kullanılır, analiz, reklam veya başka bir amaçla işlenmez.</p>
-  <p>Uygulamada reklam, reklam kimliği, konum takibi veya pazarlama amaçlı analiz aracı yoktur. Kamera yalnızca barkod okuttuğunda Google'ın barkod okuyucusu tarafından kullanılır; kamera görüntüsü kaydedilmez ve hiçbir yere gönderilmez.</p>
+  <p><strong>Bulut yedeği nasıl korunur?</strong> Yedek, Google Firebase'in Cloud Firestore hizmetinde, Amerika Birleşik Devletleri'ndeki Google sunucularında saklanır. Bu aktarım yalnızca kayıt sırasında ya da sonradan uygulamada verdiğin <strong>açık rıza</strong> ile yapılır; rıza vermezsen verilerin sadece telefonunda kalır. Rızanı <span class="path">Profil › Yedekleme</span> bölümünden istediğin zaman geri alabilirsin, bu durumda bulut yedeğin silinir (<a href="https://eakdemir3-prog.github.io/fitnex-legal/kvkk.html">KVKK Aydınlatma Metni</a>). Veriler aktarım sırasında (HTTPS/TLS) ve depolanırken şifrelidir. Güvenlik kuralları gereği her kullanıcı yalnızca kendi hesabına ait yedeğe erişebilir; başka kullanıcılar senin verini göremez. Yedek yalnızca verilerini sana geri getirmek için kullanılır, analiz, reklam veya başka bir amaçla işlenmez.</p>
+  <p>Uygulamada reklam, reklam kimliği ve konum takibi yoktur; kullanım istatistikleri yalnızca uygulamayı geliştirmek için kullanılır, pazarlama veya reklam için kullanılmaz. Uygulamanın güvenliği için Google Play Integrity ile cihaz ve uygulama bütünlüğü doğrulanır (Firebase App Check). Kamera yalnızca barkod okuttuğunda Google'ın barkod okuyucusu tarafından kullanılır; kamera görüntüsü kaydedilmez ve hiçbir yere gönderilmez.</p>
 </section>
 
 <section>
@@ -79,7 +83,8 @@ footer{border-top:1px solid var(--rule);padding-top:16px;color:var(--dim);font-s
   <ul>
     <li><strong>Google</strong>: Google ile giriş ve Google Play Faturalandırma. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a></li>
     <li><strong>RevenueCat, Inc.</strong>: abonelik doğrulama. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Gizlilik Politikası</a></li>
-    <li><strong>Google Firebase Authentication ve Cloud Firestore</strong>: hesap girişi, şifre sıfırlama e-postası ve verilerinin bulut yedeği.</li>
+    <li><strong>Google Firebase Authentication, Cloud Firestore, Analytics ve App Check</strong>: hesap girişi, şifre sıfırlama e-postası, bulut yedeği, anonim kullanım istatistikleri ve güvenlik doğrulaması.</li>
+    <li><strong>Health Connect (Android)</strong>: yalnızca izin verirsen adım sayısı ve kilo okunur.</li>
     <li><strong>Google Firebase Crashlytics</strong>: uygulama çökme ve hata raporları. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik ve Güvenlik</a></li>
     <li><strong>Open Food Facts</strong> (açık, kâr amacı gütmeyen gıda veritabanı): okutulan barkodun ürün bilgisi. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Open Food Facts Gizlilik Politikası</a></li>
   </ul>

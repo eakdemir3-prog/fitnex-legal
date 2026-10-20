@@ -44,7 +44,7 @@ footer{border-top:1px solid var(--rule);padding-top:16px;color:var(--dim);font-s
 <header>
   <div class="brand"><i></i>FITNEX</div>
   <h1>Privacy Policy</h1>
-  <div class="meta">Last updated: October 15, 2026 · Developer: EA Vision Labs · Package: com.eavisionlabs.fitnex · <a href="https://eakdemir3-prog.github.io/fitnex-legal/gizlilik.html">Türkçe</a></div>
+  <div class="meta">Last updated: October 20, 2026 · Developer: EA Vision Labs · Package: com.eavisionlabs.fitnex · <a href="https://eakdemir3-prog.github.io/fitnex-legal/gizlilik.html">Türkçe</a></div>
 </header>
 
 <p class="lede">FITNEX is a personal fitness app for tracking workouts and nutrition. This policy explains what data the app uses, where it is stored and what rights you have over it. In short: <strong>your data is stored on your phone and in a cloud backup linked to your account that only you can access</strong>. The backup exists to bring your data back when you change phones or reinstall the app. We never sell your data or use it for advertising.</p>
@@ -65,6 +65,7 @@ footer{border-top:1px solid var(--rule);padding-top:16px;color:var(--dim);font-s
       <tr><td>Progress photos (only if you add them)</td><td>Before/after comparison. Photos are not sent to our servers, the cloud backup or anywhere else, and they are not analyzed</td><td class="where">Only on your phone</td></tr>
       <tr><td>One-way encrypted hash of your device ID (only when you create or use an invite code)</td><td>To prevent abuse of the invite system, so an invite code can be used only once per phone. The device ID itself is not stored and cannot be recovered from the hash; it is not used for advertising or tracking</td><td class="where">Google Cloud Firestore</td></tr>
       <tr><td>Anonymous usage statistics</td><td>To understand which features are used and improve the app (events such as "workout completed" or "food added"). They do not include your name, email or fitness values. You can turn them off in <span class="path">Profile › Privacy</span></td><td class="where">Google Firebase Analytics</td></tr>
+      <tr><td>Friend challenge (only if you use this feature)</td><td>To show both of your progress when doing the same challenge with a friend: your first name, the challenge type and how many days you have completed. Only the person you share the code with can see it</td><td class="where">Cloud database</td></tr>
       <tr><td>Invite code</td><td>To calculate gift days for friend invites. Only an anonymous account ID and the code are stored</td><td class="where">Cloud database</td></tr>
       <tr><td>Product information you share (if you enter nutrition values for a barcoded product)</td><td>So the product is ready for other users who scan it. Only the product name, barcode and nutrition values are shared; your identity is not shown to other users</td><td class="where">Shared product database</td></tr>
       <tr><td>App crash and error reports</td><td>To find and fix bugs. They include the device model, Android version, app version, technical details of the error and an anonymous member ID; not your name, email or fitness data</td><td class="where">Google Firebase Crashlytics</td></tr>

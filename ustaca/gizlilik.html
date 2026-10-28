@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ustaca – Gizlilik Politikası</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0B1726;
+            color: #F8FAFC;
+            font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 28px 20px 60px;
+        }
+        h1 {
+            font-size: 26px;
+            margin: 0 0 6px;
+            color: #60A5FA;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 28px 0 8px;
+            color: #34D399;
+        }
+        p, li {
+            color: #CBD5E1;
+            margin-bottom: 12px;
+        }
+        ul, ol {
+            padding-left: 22px;
+            margin-bottom: 14px;
+        }
+        a {
+            color: #93C5FD;
+            text-decoration: underline;
+        }
+        .m {
+            color: #94A3B8;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #1E293B;
+            margin: 36px 0;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(52, 211, 153, 0.15);
+            border: 1px solid #34D399;
+            color: #A7F3D0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <span class="badge">EA Vision Labs</span>
+    <h1>Ustaca Gizlilik Politikası</h1>
+    <p class="m">Son güncelleme: 28 Ekim 2026</p>
+    <p>Bu politika, <b>Ustaca</b> mobil uygulamasının (“Uygulama”) verileri nasıl işlediğini ve koruduğunu açıklar. Ustaca; elektrikçi, tesisatçı, tamirci, teknik servis ve benzeri işletmelerin müşteri, iş emri, randevu, teklif, tahsilat ve gider kayıtlarını tutması için geliştirilmiştir. Veri sorumlusu: <b>Emre Akdemir (EA Vision Labs)</b>, iletişim: <a href="mailto:eakdemir3@gmail.com">eakdemir3@gmail.com</a>.</p>
+
+    <h2>1. Temel İlke: Veriler Yalnızca Cihazınızda</h2>
+    <p>Ustaca'da hesap açma veya giriş yapma yoktur. Uygulamaya girdiğiniz tüm kayıtlar yalnızca telefonunuzdaki yerel veritabanında (SQLite / Room) saklanır. Bu veriler <b>geliştiriciye veya herhangi bir sunucuya gönderilmez, üçüncü taraflarla paylaşılmaz ve satılmaz</b>. Uygulamada reklam, analiz (analytics) veya kullanıcı takip araçları bulunmaz.</p>
+
+    <h2>2. Uygulamada Saklanan Veriler</h2>
+    <ul>
+        <li><b>İşletme Profili:</b> İşletme adı, faaliyet alanı, telefon, e-posta, adres, vergi numarası ve isteğe bağlı logo (tekliflerde ve makbuzlarda kullanılır).</li>
+        <li><b>Müşteri Bilgileri:</b> Ad soyad, telefon, e-posta, adres ve notlar (müşteri takibi için).</li>
+        <li><b>İş ve Randevu Kayıtları:</b> İş başlığı, açıklama, adres, tarih/saat, durum, fiyat ve notlar.</li>
+        <li><b>Fotoğraflar:</b> İş öncesi/sonrası fotoğraflar, yalnızca sizin galeriden seçtiğiniz görseller olup uygulamanın kendi depolama alanına kopyalanır.</li>
+        <li><b>Finansal Kayıtlar:</b> Teklifler, tahsilatlar, ödeme şekilleri ve giderler (kasa ve rapor hesapları için).</li>
+    </ul>
+
+    <h2>3. Cihaz İzinleri</h2>
+    <ul>
+        <li><b>Bildirim (POST_NOTIFICATIONS):</b> Yaklaşan randevularınız için cihazınızda yerel hatırlatma bildirimi göstermek için kullanılır. İzin vermezseniz uygulama bildirimsiz çalışmaya devam eder.</li>
+        <li><b>Açılışta çalışma (RECEIVE_BOOT_COMPLETED):</b> Telefon yeniden başladığında randevu hatırlatmalarını yeniden kurmak için kullanılır.</li>
+        <li>Fotoğraf ve logo seçimi Android'in sistem seçicisiyle yapılır; uygulama galerinizin tamamına erişim izni istemez.</li>
+        <li>Uygulama konum, kamera, mikrofon, rehber, SMS veya arama kaydı izni <b>istemez</b>.</li>
+    </ul>
+
+    <h2>4. WhatsApp, Arama, Harita ve Paylaşım</h2>
+    <p>“WhatsApp'tan Yaz”, “Ara” veya “Haritada aç” düğmelerine bastığınızda ilgili uygulama hazır bilgiyle açılır; mesaj veya arama <b>sizin onayınızla</b> ve o uygulamanın kendi kuralları içinde gerçekleşir. Ustaca hiçbir mesajı otomatik veya gizlice göndermez. Teklif/makbuz PDF'leri, CSV raporları ve JSON yedek dosyaları yalnızca siz paylaş dediğinizde, seçtiğiniz uygulamaya iletilir.</p>
+
+    <h2>5. Yedekleme</h2>
+    <p>Uygulama içinden aldığınız JSON yedek dosyası cihazınızda oluşturulur ve nereye kaydedileceğine siz karar verirsiniz. Ayrıca cihazınızda Android'in Google hesabı yedeklemesi açıksa, Android sistemi uygulama verilerini Google'ın kendi şifreli yedekleme hizmetine yedekleyebilir; bu işlem Google'ın koşullarına tabidir ve geliştirici bu verilere erişemez.</p>
+
+    <h2>6. Veri Kontrolü ve Silme</h2>
+    <p>Verileriniz tamamen sizin kontrolünüzdedir. <b>Daha Fazla &gt; Veri Yedekleme &amp; Geri Yükleme &gt; Tüm Verileri Sıfırla</b> ile tüm kayıtları silebilir veya uygulamayı kaldırarak verileri kalıcı olarak silebilirsiniz. Ayrıntılar: <a href="hesap-silme.html">veri silme sayfası</a>.</p>
+
+    <h2>7. Çocukların Gizliliği</h2>
+    <p>Ustaca işletmeler için tasarlanmıştır ve 13 yaşın altındaki çocuklara yönelik değildir.</p>
+
+    <h2>8. Değişiklikler, KVKK ve İletişim</h2>
+    <p>Bu politika güncellendiğinde bu sayfadaki tarih yenilenir. 6698 sayılı KVKK kapsamındaki talepleriniz ve tüm sorularınız için: <a href="mailto:eakdemir3@gmail.com?subject=Ustaca%20Gizlilik">eakdemir3@gmail.com</a>.</p>
+
+    <hr>
+
+    <h1>Ustaca Privacy Policy (English)</h1>
+    <p class="m">Last updated: 28 October 2026. Developer: Emre Akdemir (EA Vision Labs).</p>
+    <p><b>Ustaca</b> is a job, customer, appointment, quote and payment tracker for tradespeople and service businesses.</p>
+    <h2>1. On-Device Storage Only</h2>
+    <p>There is no account or sign-in. All data you enter (business profile, customers, jobs, photos you pick, quotes, payments and expenses) is stored only in a local database on your device. It is never sent to the developer or any server, never shared with third parties and never sold. The app contains no ads, analytics or tracking SDKs.</p>
+    <h2>2. Permissions</h2>
+    <p>POST_NOTIFICATIONS (local appointment reminders) and RECEIVE_BOOT_COMPLETED (restore reminders after restart). Photos are chosen through the system picker. No location, camera, microphone, contacts or SMS access.</p>
+    <h2>3. Sharing</h2>
+    <p>WhatsApp messages, calls, maps and file sharing (PDF, CSV, JSON backup) only happen when you tap the button and confirm in the target app. If Android's Google backup is enabled on your device, the system may back up app data to Google's encrypted backup service; the developer has no access to it.</p>
+    <h2>4. Deletion</h2>
+    <p>Delete everything in-app via More &gt; Data Backup &amp; Restore &gt; Reset All Data, or uninstall the app. See the <a href="hesap-silme.html">data deletion page</a>.</p>
+    <h2>5. Contact</h2>
+    <p><a href="mailto:eakdemir3@gmail.com">eakdemir3@gmail.com</a></p>
+</main>
+</body>
+</html>

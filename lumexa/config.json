@@ -7,9 +7,9 @@
   "testPro": false,
   "ads": {
     "on": true,
-    "test": true,
-    "rew": "",
-    "int": "",
+    "test": false,
+    "rew": "ca-app-pub-2435516035253344/6403444510",
+    "int": "ca-app-pub-2435516035253344/4024693186",
     "every": 3,
     "gapMin": 3,
     "child": false

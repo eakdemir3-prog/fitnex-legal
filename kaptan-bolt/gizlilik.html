@@ -10,12 +10,15 @@
 <main>
 <span class="badge">EA Vision Labs</span>
 <h1>Kaptan Bolt Gizlilik Politikası</h1>
-<p class="m">Son güncelleme: 23 Kasım 2026</p>
+<p class="m">Son güncelleme: 27 Kasım 2026</p>
 <p>Bu politika, <b>Kaptan Bolt: Son Hamle</b> mobil oyununun (“Uygulama”) verileri nasıl işlediğini açıklar. Veri sorumlusu: <b>Emre Akdemir (EA Vision Labs)</b>, iletişim: <a href="mailto:eakdemir3@gmail.com">eakdemir3@gmail.com</a>.</p>
 
 <h2>1. Oyun verileri ve isteğe bağlı Google girişi</h2>
 <p>Uygulama hesap açmadan ve internet bağlantısı olmadan oynanabilir. Bu durumda oyun ilerlemeniz (bölümler, yıldızlar, altın, enerji, güçler, kostümler, görevler ve ayarlar) yalnızca cihazınızda saklanır.</p>
 <p>İsterseniz <b>Google ile giriş</b> yapabilirsiniz. Bu durumda ilerlemenizin ve satın aldıklarınızın kaybolmaması için Google Firebase (Authentication ve Firestore) kullanılır: Google hesabınızın kullanıcı kimliği, e-posta adresi ve adı ile oyun ilerlemeniz Google'ın sunucularında saklanır. Bu veriler yalnızca kaydınızı başka cihazlarda geri yüklemek için kullanılır, reklam amacıyla kullanılmaz ve satılmaz. Ayrıntılar: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik</a>.</p>
+
+<h3>Oyun istatistikleri ve hata raporları</h3>
+<p>Oyunu geliştirmek için <b>Google Firebase Analytics</b> ve <b>Firebase Crashlytics</b> kullanılır. Bunlar hangi bölümlerin oynandığı, kazanılıp kaybedildiği, satın alma ve reklam izleme gibi oyun içi olayları; cihaz modeli, işletim sistemi sürümü, uygulama sürümü ve uygulama örneği kimliği gibi teknik bilgileri ve uygulama çökerse hata kayıtlarını toplar. Bu veriler adınızla ilişkilendirilmez, satılmaz ve yalnızca oyunu iyileştirmek ile hataları düzeltmek için kullanılır. Ayrıca bazı oyun ayarları (ör. reklam sıklığı, etkinlikler) <b>Firebase Remote Config</b> ile uzaktan güncellenebilir.</p>
 
 <h2>2. Reklamlar (Google AdMob)</h2>
 <p>Uygulama ücretsizdir ve Google AdMob reklamları gösterir: isteğe bağlı ödüllü reklamlar (enerji, altın, ipucu veya devam hakkı için) ve belirli aralıklarla bölüm sonlarında tam ekran reklamlar. AdMob; reklam kimliği, cihaz ve uygulama bilgileri, IP adresi gibi verileri reklam sunmak, ölçmek ve kötüye kullanımı önlemek için işleyebilir. Avrupa Ekonomik Alanı ve İngiltere'deki kullanıcılardan Google'ın onay formuyla (UMP) izin istenir. Reklam kimliğini cihazınızın <i>Ayarlar &gt; Google &gt; Reklamlar</i> bölümünden sıfırlayabilir veya silebilirsiniz. Ayrıntılar: <a href="https://policies.google.com/technologies/ads">Google reklam politikaları</a>.</p>
@@ -24,10 +27,10 @@
 <p>Altın paketleri, başlangıç paketi ve ömür boyu Pro Google Play Faturalandırma üzerinden satılır. Ödeme bilgileriniz tamamen Google tarafından işlenir; geliştirici kart veya ödeme bilgilerinize erişmez. Aynı satın almanın iki kez verilmemesi için Google Play'in verdiği satın alma kimliği oyun kaydınızda saklanır; Google ile giriş yaptıysanız bu kayıt bulut yedeğinize de eklenir.</p>
 
 <h2>4. Cihaz izinleri</h2>
-<p>Uygulama yalnızca titreşim (oyun içi geri bildirim), internet (reklam ve satın alma için) ve reklam kimliği izinlerini kullanır. Konumunuza, rehberinize, kameranıza, mikrofonunuza, fotoğraflarınıza veya dosyalarınıza erişmez.</p>
+<p>Uygulama yalnızca titreşim (oyun içi geri bildirim), internet (reklam, satın alma ve bulut kayıt için), reklam kimliği ve bildirim (isteğe bağlı: enerji dolunca ve günlük bulmaca hatırlatması; ayarlardan kapatılabilir) izinlerini kullanır. Konumunuza, rehberinize, kameranıza, mikrofonunuza, fotoğraflarınıza veya dosyalarınıza erişmez.</p>
 
 <h2>5. Paylaşım ve saklama</h2>
-<p>Veriler satılmaz. Yalnızca yukarıda belirtilen hizmet sağlayıcılar (Google AdMob, Google Play, Google Firebase) tarafından, kendi politikalarına uygun olarak işlenir ve aktarım sırasında şifrelenir (HTTPS).</p>
+<p>Veriler satılmaz. Yalnızca yukarıda belirtilen hizmet sağlayıcılar (Google AdMob, Google Play, Google Firebase — Authentication, Firestore, Analytics, Crashlytics, Remote Config) tarafından, kendi politikalarına uygun olarak işlenir ve aktarım sırasında şifrelenir (HTTPS).</p>
 
 <h2>6. Çocuklar</h2>
 <p>Uygulama genel kitleye yöneliktir ve 13 yaşın altındaki çocuklara özel olarak yönelik değildir. Gösterilen reklamlar genel izleyiciye uygun içerik derecesiyle sınırlandırılmıştır.</p>
@@ -44,12 +47,13 @@
 <p class="m">Last updated: 23 November 2026. Developer: Emre Akdemir (EA Vision Labs), <a href="mailto:eakdemir3@gmail.com">eakdemir3@gmail.com</a>.</p>
 <h2>1. Game data and optional Google sign-in</h2>
 <p>The game can be played without an account and offline; progress is then stored only on your device. If you choose to sign in with Google, Google Firebase (Authentication and Firestore) stores your Google user ID, email address, name and game progress so you can restore it on other devices. This data is not used for advertising and is never sold.</p>
+<p>To improve the game we use <b>Firebase Analytics</b> and <b>Firebase Crashlytics</b>, which collect in-game events (levels played, wins/losses, purchases, ads watched), technical device info (model, OS version, app version, app instance ID) and crash logs. This data is not linked to your name, is never sold, and is used only to improve the game and fix bugs. Some settings may be updated remotely via <b>Firebase Remote Config</b>.</p>
 <h2>2. Advertising (Google AdMob)</h2>
 <p>The app shows Google AdMob ads (opt-in rewarded ads and occasional interstitials at level end). AdMob may process the advertising ID, device and app information and IP address to serve and measure ads. Users in the EEA/UK are asked for consent via Google's UMP consent form.</p>
 <h2>3. In-app purchases</h2>
 <p>Coin packs, the starter pack and lifetime Pro are sold through Google Play Billing; payment details are handled entirely by Google. The Google Play purchase ID is kept in your game save (and in your cloud backup if signed in) so a purchase is never granted twice.</p>
 <h2>4. Permissions</h2>
-<p>The app only uses vibration, internet and advertising ID. It does not access your location, contacts, camera, microphone, photos or files.</p>
+<p>The app only uses vibration, internet, advertising ID and (optional) notifications for energy and daily puzzle reminders, which can be turned off in settings. It does not access your location, contacts, camera, microphone, photos or files.</p>
 <h2>5. Sharing</h2>
 <p>Data is never sold and is processed only by the providers listed above.</p>
 <h2>6. Children</h2>
